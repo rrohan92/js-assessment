@@ -4,10 +4,10 @@ exports.modulesAnswers = {
   createModule: function(str1, str2) {
   	return (function(){
   		var name = str2;
-  		var greeting = str1; 
+  		var greeting = str1;
 
   		function sayIt(){
-  		  return greeting + ', ' + name; 
+  		  return this.greeting + ', ' + this.name; 
   		}
 
   		return {
